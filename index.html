@@ -1,57 +1,103 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Textdoctor by smerth</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Textdoctor</h1>
-      <h2 class="project-tagline">its all in the Fine Print!</h2>
-      <a href="https://github.com/smerth/TextDoctor" class="btn">View on GitHub</a>
-      <a href="https://github.com/smerth/TextDoctor/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/smerth/TextDoctor/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
 
-    <section class="main-content">
-      <h3>
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Textdoctor by smerth</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/smerth/TextDoctor">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Textdoctor</h1>
+            <h2>its all in the Fine Print!</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/smerth/TextDoctor/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/smerth/TextDoctor/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h3>
 <a id="welcome-to-textdoctor" class="anchor" href="#welcome-to-textdoctor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to TextDoctor!</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+<p>TextDoctor is an AppleScript App that converts Microsoft Word documents into plain old text files!  What could be more exciting than that!  Steady on...</p>
 
 <h3>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p>Download the app and move it to your applications folder.  If you want you can drag the application icon to your Dock so that it is handy when you need it. </p>
+
+<p>All you need to start is a folder full of Word documents.  </p>
+
+<p>When you open the app you'll be asked to choose a folder full of Word documents.  The first thing TextDoctor does is archive your chosen folder so you have a backup of your original files.  You'll find the backup archive in the same location as the folder you chose.</p>
+
+<p>Your folder might contain sub-folders full of Word documents, that's no problem.  TextDoctor will look through all the sub-folders inside the folder you choose and convert each one in place into a plain vanilla text file.</p>
+
+<p>After the conversions have taken place TextDoctor will delete original Word documents leaving behind only the fresh sparkling text files for you to enjoy.</p>
+
+<p>N.B. If you give TextDoctor a folder with a thousand files to convert it may take several minutes to complete. Your task during this time is to decide whether to mix a martini or eat a bowl of kale soup.  TextDoctor is agnostic concerning the outcome of this decision.</p>
 
 <h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<a id="apple-app-authentication" class="anchor" href="#apple-app-authentication" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Apple App Authentication</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>When you first open the TextDoctor you be confronted with a warning window from Apple saying TextDoctor cannot be opened because it is from an unidentified developer.  Leave that window open.  Go to: Preferences &gt; Security &amp; Privacy &gt; General.  Here you'll see a line at the bottom saying "TextDoctor was blocked from opening... etc."  Click the "Open Anyway" button.</p>
+
+<p>That's it... You're off to the races...  However, if this step was stressful you may consider pausing for a piece of Blueberry Crumble and a cuppa tea.  TextDoctor has been tested with user who drink Tetley's English Breakfast and seems to work fine. </p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>This mammoth undertaking would not have been possible without the hard work of generations of programs but in particular smerth (<a href="https://github.com/smerth" class="user-mention">@smerth</a>) is to thank.</p>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+      </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/smerth/TextDoctor">Textdoctor</a> is maintained by <a href="https://github.com/smerth">smerth</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/smerth">smerth</a> can be found on <a href="https://github.com/smerth/TextDoctor">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
 
-    </section>
+    </div>
 
-  
+    
   </body>
 </html>
